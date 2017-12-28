@@ -1,0 +1,119 @@
+//
+//  PrefixHeader.pch
+//  JCBJCB
+//
+//  Created by apple on 16/10/14.
+//  Copyright © 2016年 Sorgle. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+
+/*** 日志 ***/
+#ifdef DEBUG
+#define SGDebugLog(...) NSLog(__VA_ARGS__)
+#else
+#define SGDebugLog(...)
+#endif
+
+#define SGLogFunc SGDebugLog(@"%s", __func__);
+
+
+/*** 颜色 ***/
+#define SGColorWithRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define SGColorWithRGB(r, g, b) SGColorWithRGBA((r), (g), (b), 255)
+#define SGrayColor(v) SGColorWithRGB((v), (v), (v))
+#define SGColorWithRandom SGColorWithRGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define SGColorWithRed [UIColor redColor]
+#define SGColorWithWhite [UIColor whiteColor]
+#define SGColorWithClear [UIColor clearColor]
+#define SGCommonRedColor SGColorWithRGB(239, 62, 68)
+#define SGCommonBgColor SGrayColor(239)
+#define SGSplitLineColor SGrayColor(209)
+#define SGColorWithDarkGrey SGrayColor(150)
+#define SGColorWithBlackOfDark SGrayColor(100)
+
+
+/*** 评论-头部控件-字体 ***/
+#define SGCommentSectionHeaderFont [UIFont systemFontOfSize:15]
+
+
+/****** 屏幕尺寸 ******/
+#define SG_screenWidth [UIScreen mainScreen].bounds.size.width
+#define SG_screenHeight [UIScreen mainScreen].bounds.size.height
+#define loopScrollViewHeight SG_screenHeight / 3.2
+#define mineTopImageViewHeight SG_screenHeight / 3.2
+#define navigationAndStatusBarHeight 64
+
+
+#define iphone6P (SG_screenHeight == 736)
+#define iphone6s (SG_screenHeight == 667)
+#define iphone5s (SG_screenHeight == 568)
+#define iphone4s (SG_screenHeight == 480)
+
+
+/***************************** tableViewCellHeight *******************************/
+#define tableViewCellIphone5s_Height 44
+#define tableViewCellIphone6s_Height 50
+#define tableViewCellIphone6P_Height 56
+
+
+/***************************** 通知中心 *******************************/
+#define SGNotificationCenter [NSNotificationCenter defaultCenter]
+#define SGUserDefaults [NSUserDefaults standardUserDefaults]
+
+/***************************** 屏蔽客服 *******************************/
+#define Enable_CustomerServices 0
+
+
+
+
+
+/***************************** 头文件 *******************************/
+
+#import "UIAlertController+Sorgle.h"
+#import "JCBConst.h"
+#import "JCBNoDataView.h"
+#import "JCBSingletonManager.h"
+#import "UIBarButtonItem+Extension.h"
+#import "SGHelperTool.h"
+#import "UIImage+Sorgle.h"
+#import "NSString+SGExtension.h"
+#import "UITextField+SGExtension.h"
+#import "UIView+SGExtension.h"
+#import "RightDropDownMenu.h"
+#import "RedRightDropDownMenu.h"
+#import "SGTextField.h"
+#import "SGTextView.h"
+#import "SGSmallTool.h"
+#import "SGVerticalButton.h"
+#import "CALayer+Animation.h"
+#import "JCBModel.h"
+#import "JCBTableView.h"
+#import "JCBLabelView.h"
+#import "UIButton+JCBColor.h"
+
+/****************** 第三方 ******************/
+#import "ASProgressPopUpView.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+SG.h"
+#import "MJExtension.h"
+#import "PYPhotoBrowser.h"
+#import "SGAlertView.h"
+#import "SGActionSheet.h"
+#import "SGSegmentedControl.h"
+#import "SGHttpTool.h"
+#import "SGProgressHUDTool.h"
+#import "SGRefresh.h"
+#import "UIImageView+WebCache.h"
+#import <Masonry.h>
+
+
+
+#endif
+#endif /* PrefixHeader_pch */
+
+

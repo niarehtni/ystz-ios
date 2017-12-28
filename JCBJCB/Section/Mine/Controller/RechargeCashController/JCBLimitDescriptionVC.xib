@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JCBLimitDescriptionVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风险控制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irh-Oy-dX5">
+                    <rect key="frame" x="10" y="10" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="为了保护您的银行卡资金安全，乐商贷平台联合第三方支付机构－融宝支付采用了新／老卡机制" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw5-Wg-MWM">
+                    <rect key="frame" x="10" y="39" width="355" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新卡限额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLG-ft-tmg">
+                    <rect key="frame" x="10" y="85" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单笔支付上限 2 万，单日支付总额上限 3 万。（新卡限额不超过银行规定限额）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-2S-9R6">
+                    <rect key="frame" x="10" y="114" width="355" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="老卡限额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqs-gw-lny">
+                    <rect key="frame" x="10" y="160" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nJ-rs-jHD">
+                    <rect key="frame" x="10" y="189" width="355" height="72"/>
+                    <string key="text">单笔支付上限 5 万，单日支付总额上限 20 万。（老卡限额与银行规定限额一致）
+用户首次通过融宝支付在乐商贷平台充值后享受新卡额度，第四个自然日可享受老卡额度</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="irh-Oy-dX5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="BTf-8P-Vhm"/>
+                <constraint firstItem="Tw5-Wg-MWM" firstAttribute="top" secondItem="irh-Oy-dX5" secondAttribute="bottom" constant="5" id="HY5-bL-3QR"/>
+                <constraint firstAttribute="trailing" secondItem="Tw5-Wg-MWM" secondAttribute="trailing" constant="10" id="Lzr-sQ-WXR"/>
+                <constraint firstItem="5nJ-rs-jHD" firstAttribute="top" secondItem="wqs-gw-lny" secondAttribute="bottom" constant="5" id="P79-wu-PkP"/>
+                <constraint firstItem="RLG-ft-tmg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="S8n-ns-JcX"/>
+                <constraint firstAttribute="trailing" secondItem="5nJ-rs-jHD" secondAttribute="trailing" constant="10" id="T1Z-ca-aqu"/>
+                <constraint firstItem="5nJ-rs-jHD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="e1j-B7-uWc"/>
+                <constraint firstItem="3Ek-2S-9R6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="hgP-cC-W5j"/>
+                <constraint firstAttribute="trailing" secondItem="3Ek-2S-9R6" secondAttribute="trailing" constant="10" id="jVC-j9-hmm"/>
+                <constraint firstItem="irh-Oy-dX5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="m8R-IX-In5"/>
+                <constraint firstItem="wqs-gw-lny" firstAttribute="top" secondItem="3Ek-2S-9R6" secondAttribute="bottom" constant="10" id="miI-dV-Zlg"/>
+                <constraint firstItem="Tw5-Wg-MWM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="oJ2-lD-nE4"/>
+                <constraint firstItem="RLG-ft-tmg" firstAttribute="top" secondItem="Tw5-Wg-MWM" secondAttribute="bottom" constant="10" id="qFh-w3-yHl"/>
+                <constraint firstItem="3Ek-2S-9R6" firstAttribute="top" secondItem="RLG-ft-tmg" secondAttribute="bottom" constant="5" id="sJ4-FZ-hmM"/>
+                <constraint firstItem="wqs-gw-lny" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="tNi-95-M17"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

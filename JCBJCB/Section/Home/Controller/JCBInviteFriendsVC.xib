@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JCBInviteFriendsVC">
+            <connections>
+                <outlet property="scrollView" destination="DSA-ZA-ac1" id="QM8-SV-gvn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jcb_inviteFriends_bg_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5qd-4V-ZEe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSA-ZA-ac1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="4gG-xo-q5C"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5qd-4V-ZEe" secondAttribute="bottom" id="6Fn-5r-ZcO"/>
+                <constraint firstItem="5qd-4V-ZEe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RiE-OJ-mgu"/>
+                <constraint firstItem="5qd-4V-ZEe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UoW-ZT-c11"/>
+                <constraint firstItem="DSA-ZA-ac1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WDu-LH-bpX"/>
+                <constraint firstAttribute="trailing" secondItem="5qd-4V-ZEe" secondAttribute="trailing" id="aSw-nv-Yc6"/>
+                <constraint firstAttribute="trailing" secondItem="DSA-ZA-ac1" secondAttribute="trailing" id="kyF-ES-ss8"/>
+                <constraint firstItem="DSA-ZA-ac1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u2C-vg-GWH"/>
+                <constraint firstAttribute="bottom" secondItem="DSA-ZA-ac1" secondAttribute="bottom" id="xbB-LU-8W0"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="jcb_inviteFriends_bg_icon" width="375" height="609"/>
+    </resources>
+</document>

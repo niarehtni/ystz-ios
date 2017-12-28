@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JCBNounInterpretationVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总资产" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rd-IQ-E3j">
+                    <rect key="frame" x="10" y="10" width="62" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总资产 ＝ 投资中本金 ＋ 可用余额 ＋ 投资冻结中金额 ＋ 体现中金额" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2u-D8-ucH">
+                    <rect key="frame" x="10" y="39" width="355" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投资中本金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEh-di-Rzu">
+                    <rect key="frame" x="10" y="85" width="102" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前处于投资中状态项目的投资金总额" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exP-r9-aPv">
+                    <rect key="frame" x="10" y="114" width="355" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可用余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAj-nK-Q0D">
+                    <rect key="frame" x="10" y="142" width="82" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户中可用于提现和投资的金额" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MrV-EJ-vL3">
+                    <rect key="frame" x="10" y="171" width="355" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投资冻结中金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3M-kK-9ak">
+                    <rect key="frame" x="10" y="199" width="143" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成交后，项目并未直接起息，而是需要通过满标复审后才会起息。该阶段的投资金额会处于冻结状态" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htd-Hx-gFq">
+                    <rect key="frame" x="10" y="228" width="355" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体现中金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3l-gD-dFB">
+                    <rect key="frame" x="10" y="274" width="102" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户在发起提现之后第三方平台审核期间，被冻结无法进行操作的资金" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uf-N2-OHf">
+                    <rect key="frame" x="10" y="303" width="355" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已到账收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veW-p1-Fdd">
+                    <rect key="frame" x="10" y="349" width="102" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.1450980392" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所有投资已回款收益的总额" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ1-uL-Uni">
+                    <rect key="frame" x="10" y="378" width="355" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="htd-Hx-gFq" secondAttribute="trailing" constant="10" id="0Ky-fm-Mc8"/>
+                <constraint firstItem="7Rd-IQ-E3j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="10e-KB-Dp8"/>
+                <constraint firstItem="2uf-N2-OHf" firstAttribute="top" secondItem="w3l-gD-dFB" secondAttribute="bottom" constant="5" id="5A0-hf-DRS"/>
+                <constraint firstItem="hAj-nK-Q0D" firstAttribute="top" secondItem="exP-r9-aPv" secondAttribute="bottom" constant="10" id="5ZG-ie-Hty"/>
+                <constraint firstItem="c2u-D8-ucH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="6Mh-vl-dwr"/>
+                <constraint firstItem="htd-Hx-gFq" firstAttribute="top" secondItem="E3M-kK-9ak" secondAttribute="bottom" constant="5" id="6ev-Ka-SBa"/>
+                <constraint firstAttribute="trailing" secondItem="c2u-D8-ucH" secondAttribute="trailing" constant="10" id="6i0-yK-0Th"/>
+                <constraint firstAttribute="trailing" secondItem="CQ1-uL-Uni" secondAttribute="trailing" constant="10" id="8u4-Jg-UAP"/>
+                <constraint firstAttribute="trailing" secondItem="exP-r9-aPv" secondAttribute="trailing" constant="10" id="B2c-6B-73c"/>
+                <constraint firstItem="CQ1-uL-Uni" firstAttribute="top" secondItem="veW-p1-Fdd" secondAttribute="bottom" constant="5" id="BDs-K9-QVZ"/>
+                <constraint firstAttribute="trailing" secondItem="2uf-N2-OHf" secondAttribute="trailing" constant="10" id="HYM-D2-7wK"/>
+                <constraint firstItem="w3l-gD-dFB" firstAttribute="top" secondItem="htd-Hx-gFq" secondAttribute="bottom" constant="10" id="IRf-My-16Q"/>
+                <constraint firstItem="exP-r9-aPv" firstAttribute="top" secondItem="EEh-di-Rzu" secondAttribute="bottom" constant="5" id="JBL-Vc-zXk"/>
+                <constraint firstItem="c2u-D8-ucH" firstAttribute="top" secondItem="7Rd-IQ-E3j" secondAttribute="bottom" constant="5" id="LPe-cH-Tte"/>
+                <constraint firstItem="MrV-EJ-vL3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="MwR-mT-Ilb"/>
+                <constraint firstItem="w3l-gD-dFB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Nuc-lw-We4"/>
+                <constraint firstItem="E3M-kK-9ak" firstAttribute="top" secondItem="MrV-EJ-vL3" secondAttribute="bottom" constant="10" id="Oek-6n-vyi"/>
+                <constraint firstItem="CQ1-uL-Uni" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="P6r-WW-2o8"/>
+                <constraint firstItem="7Rd-IQ-E3j" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="WPY-MG-fDe"/>
+                <constraint firstItem="veW-p1-Fdd" firstAttribute="top" secondItem="2uf-N2-OHf" secondAttribute="bottom" constant="10" id="XYf-YO-CW6"/>
+                <constraint firstAttribute="trailing" secondItem="MrV-EJ-vL3" secondAttribute="trailing" constant="10" id="cfv-ft-DnM"/>
+                <constraint firstItem="hAj-nK-Q0D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="gfa-vL-XWt"/>
+                <constraint firstItem="EEh-di-Rzu" firstAttribute="top" secondItem="c2u-D8-ucH" secondAttribute="bottom" constant="10" id="h5v-pz-gUX"/>
+                <constraint firstItem="2uf-N2-OHf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="iYr-HU-wVN"/>
+                <constraint firstItem="MrV-EJ-vL3" firstAttribute="top" secondItem="hAj-nK-Q0D" secondAttribute="bottom" constant="5" id="kJj-WI-p2Q"/>
+                <constraint firstItem="veW-p1-Fdd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="lyF-9O-2oT"/>
+                <constraint firstItem="htd-Hx-gFq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="wcV-8S-bU3"/>
+                <constraint firstItem="EEh-di-Rzu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="xg7-kZ-xRl"/>
+                <constraint firstItem="exP-r9-aPv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="yrO-hl-15d"/>
+                <constraint firstItem="E3M-kK-9ak" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="zPR-cb-4lv"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

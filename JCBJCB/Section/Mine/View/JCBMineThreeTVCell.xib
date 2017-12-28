@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JCBMineThreeTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="269"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80U-FO-caF" userLabel="左上" customClass="SGVerticalButton">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="134"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="充值提现" image="mine_recharge_cash_icon">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="mine_recharge_cash_icon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQA-Fd-XQi" userLabel="右上" customClass="SGVerticalButton">
+                        <rect key="frame" x="161" y="0.0" width="159" height="134"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="红包奖励" image="mine_red_packer">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="mine_red_packer"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3n-ee-79A">
+                        <rect key="frame" x="299" y="10" width="8" height="8"/>
+                        <color key="backgroundColor" red="1" green="0.6955371132" blue="0.18797117620000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="aLj-WT-oe5"/>
+                            <constraint firstAttribute="width" constant="8" id="yNC-ec-qpw"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGK-vq-phZ" userLabel="右下" customClass="SGVerticalButton">
+                        <rect key="frame" x="0.0" y="135" width="160" height="134"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="投资记录" image="mine_add_btn_icon">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="mine_add_btn_icon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMg-Kx-2HM" userLabel="左下" customClass="SGVerticalButton">
+                        <rect key="frame" x="161" y="135" width="159" height="134"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="资金记录" image="mine_fund_recore_icon">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" image="mine_fund_recore_icon"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="80U-FO-caF" secondAttribute="trailing" multiplier="2" id="0iJ-j0-iCm"/>
+                    <constraint firstItem="80U-FO-caF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2HZ-7B-0ug"/>
+                    <constraint firstAttribute="bottom" secondItem="KGK-vq-phZ" secondAttribute="bottom" id="4ip-6D-hJh"/>
+                    <constraint firstItem="R3n-ee-79A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="9d8-6k-qa0"/>
+                    <constraint firstItem="XQA-Fd-XQi" firstAttribute="height" secondItem="80U-FO-caF" secondAttribute="height" id="9eb-fY-N9j"/>
+                    <constraint firstItem="KGK-vq-phZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9q6-0E-WSq"/>
+                    <constraint firstAttribute="bottom" secondItem="LMg-Kx-2HM" secondAttribute="bottom" id="CAt-aB-fnz"/>
+                    <constraint firstItem="XQA-Fd-XQi" firstAttribute="leading" secondItem="80U-FO-caF" secondAttribute="trailing" constant="1" id="Mw1-pr-55W"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="R3n-ee-79A" secondAttribute="trailing" constant="5" id="Ps5-sy-wrX"/>
+                    <constraint firstItem="LMg-Kx-2HM" firstAttribute="leading" secondItem="KGK-vq-phZ" secondAttribute="trailing" constant="1" id="TJ4-Qa-4og"/>
+                    <constraint firstItem="KGK-vq-phZ" firstAttribute="width" secondItem="80U-FO-caF" secondAttribute="width" id="W3b-66-ny2"/>
+                    <constraint firstItem="LMg-Kx-2HM" firstAttribute="top" secondItem="XQA-Fd-XQi" secondAttribute="bottom" constant="1" id="aLq-yO-mFK"/>
+                    <constraint firstItem="XQA-Fd-XQi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eEu-Ey-yI4"/>
+                    <constraint firstItem="KGK-vq-phZ" firstAttribute="top" secondItem="80U-FO-caF" secondAttribute="bottom" constant="1" id="htf-HB-w8l"/>
+                    <constraint firstAttribute="trailing" secondItem="XQA-Fd-XQi" secondAttribute="trailing" id="qwL-G0-xvh"/>
+                    <constraint firstAttribute="trailing" secondItem="LMg-Kx-2HM" secondAttribute="trailing" id="r9T-Mo-fZ2"/>
+                    <constraint firstItem="80U-FO-caF" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" constant="-1" id="rkW-x9-2uZ"/>
+                    <constraint firstItem="80U-FO-caF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vaB-sD-N0c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bonus_bonus_btn" destination="XQA-Fd-XQi" id="dcc-Aq-JCJ"/>
+                <outlet property="fund_record_btn" destination="LMg-Kx-2HM" id="yhL-er-ZiJ"/>
+                <outlet property="investment_record_btn" destination="KGK-vq-phZ" id="9jm-bE-NKB"/>
+                <outlet property="recharge_cash_btn" destination="80U-FO-caF" id="NIW-MR-3lj"/>
+                <outlet property="smallDot" destination="R3n-ee-79A" id="cCB-rb-wOS"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_add_btn_icon" width="25" height="25"/>
+        <image name="mine_fund_recore_icon" width="22" height="28"/>
+        <image name="mine_recharge_cash_icon" width="26" height="25"/>
+        <image name="mine_red_packer" width="24" height="24"/>
+    </resources>
+</document>
